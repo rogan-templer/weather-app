@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { getAucklandWeather, getAucklandTemp } from "../api";
+import { getAucklandWeather } from "../api";
+
+import AucklandTemp from "./AuclandTemp";
 
 function Auckland() {
   const [weather, setWeather] = useState([]);
-  const [temp, setTemp] = useState(0);
 
   useEffect(() => {
     getAucklandWeather().then((data) => {
       setWeather(data);
-    });
-  }, []);
-
-  useEffect(() => {
-    getAucklandTemp().then((data) => {
-      setTemp(data);
     });
   }, []);
 
@@ -29,7 +24,7 @@ function Auckland() {
             );
           })}
         </ul>
-        <h2>{temp} celcius</h2>
+        <AucklandTemp />
       </div>
     </>
   );
