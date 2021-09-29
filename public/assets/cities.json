@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1252887,
+    "name": "Wellington",
+    "state": "",
+    "country": "IN",
+    "coord": {
+        "lon": 76.800003,
+        "lat": 11.36667
+    }
+},
+{
+  "id": 2193732,
+  "name": "Auckland",
+  "state": "",
+  "country": "NZ",
+  "coord": {
+      "lon": 174.743042,
+      "lat": -36.85582
+  }
+},
+{
+  "id": 2190324,
+  "name": "Hamilton",
+  "state": "",
+  "country": "NZ",
+  "coord": {
+      "lon": 175.283325,
+      "lat": -37.783329
+  }
+},
+{
+  "id": 2208032,
+  "name": "Tauranga",
+  "state": "",
+  "country": "NZ",
+  "coord": {
+      "lon": 176.166672,
+      "lat": -37.686111
+  }
+},
+]
