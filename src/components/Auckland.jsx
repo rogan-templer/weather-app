@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import { useParams } from "react-router-dom";
 import { getAucklandWeather } from "../api";
 
-import AucklandTemp from "./AuclandTemp";
+import AucklandTemp from "./AucklandTemp";
 import BackToHome from "./BackToHome";
 
 function Auckland() {
@@ -21,7 +21,9 @@ function Auckland() {
           {weather.map((details, index) => {
             return (
               <div>
-                <h2 key={index}>{details.main}</h2>
+                <h2 key={index}>
+                  {details.main} - {details.description}
+                </h2>
               </div>
             );
           })}
