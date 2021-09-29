@@ -10,7 +10,7 @@ export function getAucklandWeather() {
     )
     .set("Accept", "application/json")
     .then((response) => {
-      // console.log("response", response.body.weather);
+      console.log("response", response.body.weather);
 
       return response.body.weather;
     });
@@ -23,7 +23,7 @@ export function getAucklandTemp() {
     )
     .set("Accept", "application/json")
     .then((response) => {
-      console.log("response", response.body.main.temp);
+      console.log("temp   response", response.body.main.temp);
 
       return response.body.main.temp;
     });
