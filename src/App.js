@@ -6,7 +6,7 @@ import Landing from "./components/Landing";
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Weather Watch</h1>
       <Route exact path="/" component={Landing} />
       <Route path="/Auckland" component={Auckland} />
     </div>

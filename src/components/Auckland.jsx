@@ -21,6 +21,7 @@ function Auckland() {
             return (
               <div>
                 <li key={index}>{details.description}</li>
+                <li>{details.icon}</li>
               </div>
             );
           })}
