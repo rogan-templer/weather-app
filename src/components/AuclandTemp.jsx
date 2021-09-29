@@ -13,7 +13,7 @@ function AucklandTemp() {
   return (
     <>
       <div>
-        <h4>{Math.floor(temp)}&#176;C</h4>
+        <h4>Temperature: {Math.floor(temp)}&#176;C</h4>
       </div>
     </>
   );

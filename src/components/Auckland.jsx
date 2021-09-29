@@ -17,16 +17,15 @@ function Auckland() {
   return (
     <>
       <div>
-        <ul>
+        <span>
           {weather.map((details, index) => {
             return (
               <div>
-                <li key={index}>{details.description}</li>
-                <li>{details.icon}</li>
+                <h2 key={index}>{details.main}</h2>
               </div>
             );
           })}
-        </ul>
+        </span>
         <AucklandTemp />
         <BackToHome />
       </div>
