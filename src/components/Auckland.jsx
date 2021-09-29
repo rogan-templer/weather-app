@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { getAucklandWeather } from "../api";
 
 import AucklandTemp from "./AuclandTemp";
+import BackToHome from "./BackToHome";
 
 function Auckland() {
   const [weather, setWeather] = useState([]);
@@ -27,6 +28,7 @@ function Auckland() {
           })}
         </ul>
         <AucklandTemp />
+        <BackToHome />
       </div>
     </>
   );
